@@ -3,7 +3,7 @@ URL shortening REST service.
 
 **Live Demo:** https://link-zapper.herokuapp.com/ (Read API doc before accessing the service)
 
-**⚠️ Info**: Data is permanently delete when the service goes offline. This behaviour will persist until auth is implemented.
+**⚠️ Info**: Data is permanently deleted when the service goes offline. This behaviour will persist until auth is implemented.
 
 ### 🧰 Built with:
 
