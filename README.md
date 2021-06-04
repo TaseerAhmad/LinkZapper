@@ -36,6 +36,7 @@ ________________________________________________________________________________
     { "longUrl":"PROTOCOL:DOMAIN:TLD" }
     
     - **Success Response**
+    
     Code: 200
     Content: { "shortUrl":"ALPHANUMERIC" }
     
@@ -43,7 +44,7 @@ ________________________________________________________________________________
     
     Response when the URL is invalid.
   
-    - Code: `200`
+    - Code: `400`
     - Content: `{"status":400, message:"Malfored or invalid URL", timeStamp: "[Current System Date & Time]" }`
     
     
@@ -69,7 +70,7 @@ ________________________________________________________________________________
     - **Error Response**
     Response when the required resource is not found.
     Code: 404
-    Content: { "status":404, message:"URL not found", timeStamp: "[Current System Date & Time]" }
+    Content: `{ "status":404, message:"URL not found", timeStamp: "[Current System Date & Time]" }`
     
     
     
