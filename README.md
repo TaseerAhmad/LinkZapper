@@ -19,7 +19,7 @@ ________________________________________________________________________________
  You guessed it, its a URL shortening REST service!
  
  ### Why?
- First Spring Boot project. I wanted to create a meaningful mini project to learn about REST APIs, Spring Boot and Heroku.
+ I wanted to create a meaningful mini project to learn about REST APIs, Spring Boot and Heroku.
  
  ### How?
  
@@ -32,10 +32,10 @@ ________________________________________________________________________________
 `POST`
      
      * **Required**
-    `longUrl=[PROTOCAL:DOMAIN:TLD]`
+    `longUrl=[PROTOCOL:DOMAIN:TLD]`
     
     - **Data Params**
-    { "longUrl":"PROTON:DOMAIN:TLD" }
+    { "longUrl":"PROTOCOL:DOMAIN:TLD" }
     
     - **Success Response**
     Code: 200
