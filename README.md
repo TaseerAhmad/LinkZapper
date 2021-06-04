@@ -24,6 +24,7 @@ ________________________________________________________________________________
  The API as of now, only accepts 1 value and generates some value against it and returns the generated value.
  
  **Endpoint:** /url/shorten
+ 
 
 * **Method**
 `POST`
@@ -39,9 +40,11 @@ ________________________________________________________________________________
     Content: { "shortUrl":"ALPHANUMERIC" }
     
     - **Error Response**
-    Response when the required resource is not found.
-    Code: 200
-    Content: { "status":400, message:"Malfored or invalid URL", timeStamp: "[Current System Date & Time]" }
+    
+    Response when the URL is invalid.
+  
+    - Code: `200`
+    - Content: `{"status":400, message:"Malfored or invalid URL", timeStamp: "[Current System Date & Time]" }`
     
     
     
