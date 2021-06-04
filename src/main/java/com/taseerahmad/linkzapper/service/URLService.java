@@ -11,6 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class URLService {
     private final URLHash urlHash;
@@ -39,17 +41,17 @@ public class URLService {
         return new Response(new InvalidRequest(), null, HttpStatus.OK);
     }
 
+//            String url = repository.findOriginalUrl(shortUrl);
     public Response getOriginalUrl(String shortUrl)
     {
         if (!shortUrl.trim().isEmpty() && shortUrl.length() == 8)
         {
-            String url = repository.findOriginalUrl(shortUrl);
+            Optional<URL> url = repository.findById(shortUrl);
 
-            if (url != null) {
-                Dto dto = new Dto(url);
+            if (url.isPresent()) {
+                Dto dto = new Dto(url.get().getLongUrl());
                 return new Response(null, dto, HttpStatus.OK);
             } else {
-                System.out.println(false);
                 return new Response(new NotFoundError(), null, HttpStatus.OK);
             }
         } else {
