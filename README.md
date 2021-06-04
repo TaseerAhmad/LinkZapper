@@ -9,7 +9,7 @@ URL shortening REST service.
 
 - Spring Boot
 - JPA
-- PostgreSQL
+- PostgreSQL (to be replaced with Redis)
 - Google Guava
 - Apache Commons
 
