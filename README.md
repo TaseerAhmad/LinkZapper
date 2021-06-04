@@ -3,6 +3,8 @@ URL shortening REST service
 
 Open for improvements and contributions!
 
+**Live Demo:** https://link-zapper.herokuapp.com/ (Read API doc before accessing the service)
+
 ### 🧰 Built with:
 
 - Spring Boot
