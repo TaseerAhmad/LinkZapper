@@ -1,7 +1,5 @@
 # LinkZapper
-URL shortening REST service
-
-Open for improvements and contributions!
+URL shortening REST service.
 
 **Live Demo:** https://link-zapper.herokuapp.com/ (Read API doc before accessing the service)
 
@@ -77,3 +75,9 @@ ________________________________________________________________________________
     
     
 
+
+### To Do:
+- Handle global exceptions
+- Streamline business logic
+- Add authentication to the API
+- Implement Redis
