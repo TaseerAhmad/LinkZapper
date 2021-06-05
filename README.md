@@ -94,3 +94,4 @@ ________________________________________________________________________________
 - Streamline business logic
 - Add authentication to the API
 - Implement Redis
+- Fix response codes on success & fail request
