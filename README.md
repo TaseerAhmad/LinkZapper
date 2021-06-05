@@ -69,6 +69,7 @@ ________________________________________________________________________________
     - **Success Response**
     
         Code: `200`
+        
         Content: `{ "shortUrl":"ALPHANUMERIC" }`
     
     - **Error Response**
