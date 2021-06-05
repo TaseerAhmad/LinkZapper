@@ -32,14 +32,17 @@ ________________________________________________________________________________
 `POST`
      
      * **Required**
+     
     `longUrl=[PROTOCOL:DOMAIN:TLD]`
     
     - **Data Params**
+    
     `{ "longUrl":"PROTOCOL:DOMAIN:TLD" }`
     
     - **Success Response**
     
          Code: `200`
+         
          Content: `{ "shortUrl":"ALPHANUMERIC" }`
     
     - **Error Response**
@@ -48,7 +51,7 @@ ________________________________________________________________________________
   
          Code: `400`
          
-         Content: `{"status":400, message:"Malfored or invalid URL", timeStamp: "[Current System Date & Time]" }`
+         Content: `{"status":400, message:"Malfored or invalid URL", timeStamp: "[System Date & Time]" }`
     
     
     
@@ -61,9 +64,11 @@ ________________________________________________________________________________
 `GET`
      
      * **Required**
+     
         `shortUrl=[ALPHANUMERIC]`
     
     - **Data Params**
+    
        `{ "shortUrl":"ALPHANUMERIC" }`
     
     - **Success Response**
