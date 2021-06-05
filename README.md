@@ -35,19 +35,20 @@ ________________________________________________________________________________
     `longUrl=[PROTOCOL:DOMAIN:TLD]`
     
     - **Data Params**
-    { "longUrl":"PROTOCOL:DOMAIN:TLD" }
+    `{ "longUrl":"PROTOCOL:DOMAIN:TLD" }`
     
     - **Success Response**
     
-    Code: 200
-    Content: { "shortUrl":"ALPHANUMERIC" }
+         Code: `200`
+         Content: `{ "shortUrl":"ALPHANUMERIC" }`
     
     - **Error Response**
     
-    Response when the URL is invalid.
+        Response when the URL is invalid.
   
-    - Code: `400`
-    - Content: `{"status":400, message:"Malfored or invalid URL", timeStamp: "[Current System Date & Time]" }`
+         Code: `400`
+         
+         Content: `{"status":400, message:"Malfored or invalid URL", timeStamp: "[Current System Date & Time]" }`
     
     
     
@@ -60,19 +61,22 @@ ________________________________________________________________________________
 `GET`
      
      * **Required**
-    `shortUrl=[ALPHANUMERIC]`
+        `shortUrl=[ALPHANUMERIC]`
     
     - **Data Params**
-    { "shortUrl":"ALPHANUMERIC" }
+       `{ "shortUrl":"ALPHANUMERIC" }`
     
     - **Success Response**
-    Code: 200
-    Content: { "shortUrl":"ALPHANUMERIC" }
+    
+        Code: `200`
+        Content: `{ "shortUrl":"ALPHANUMERIC" }`
     
     - **Error Response**
-    Response when the required resource is not found.
-    Code: 404
-    Content: `{ "status":404, message:"URL not found", timeStamp: "[Current System Date & Time]" }`
+        Response when the required resource is not found.
+    
+        Code: `404`
+    
+        Content: `{ "status":404, message:"URL not found", timeStamp: "[Current System Date & Time]" }`
     
     
     
